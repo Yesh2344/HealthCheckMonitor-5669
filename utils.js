@@ -14,6 +14,7 @@ import { logger } from './config.js';
  */
 export async function pingUrl(url, timeoutMs) {
   const controller = new AbortController();
+// leaving a note for later
   const timeout = setTimeout(() => controller.abort(), timeoutMs);
   const start = Date.now();
 
