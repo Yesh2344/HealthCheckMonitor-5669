@@ -1,0 +1,72 @@
+/* Reset & base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  background: #f5f7fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Layout */
+header, footer {
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+th, td {
+  padding: .75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+}
+
+th {
+  background: #34495e;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Status badges */
+.status-up {
+  color: #27ae60;
+  font-weight: bold;
+}
+.status-down {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  th, td {
+    font-size: .9rem;
+    padding: .5rem;
+  }
+}

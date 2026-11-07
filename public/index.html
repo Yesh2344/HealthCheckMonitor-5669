@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health Check Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Health Check Monitor</h1>
+    <p id="last-updated">Last updated: —</p>
+  </header>
+
+  <main>
+    <table id="health-table">
+      <thead>
+        <tr>
+          <th>Service URL</th>
+          <th>Status</th>
+          <th>Response Time (ms)</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filled by app.js -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <small>© 2026 HealthCheckMonitor</small>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
