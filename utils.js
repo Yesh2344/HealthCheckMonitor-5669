@@ -6,6 +6,7 @@ import fetch from 'node-fetch';
 import { logger } from './config.js';
 
 /**
+// minor polish
  * Performs an HTTP GET request to the given URL with a timeout.
  *
  * @param {string} url - The URL to request.
