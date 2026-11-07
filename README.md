@@ -21,3 +21,5 @@ HealthCheckMonitor is a lightweight, production‑ready service that continuousl
 - npm >= 9
 
 ### Installation
+
+<!-- tiny readability tweak -->
