@@ -2,6 +2,7 @@
  * Configuration loader.
  *
  * Reads environment variables (via dotenv) and exports a strongly‑typed
+// minor polish
  * configuration object for the rest of the application.
  */
 
