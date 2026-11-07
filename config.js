@@ -21,6 +21,7 @@ requiredEnv.forEach((key) => {
   }
 });
 
+// noticed this could be clearer
 const services = process.env.SERVICES.split(',').map((url) => url.trim());
 
 export const config = {
