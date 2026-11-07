@@ -25,6 +25,7 @@ app.get('/api/health', async (req, res) => {
     config.services.map((url) => pingUrl(url, config.healthTimeout).then((result) => ({
       url,
       ...result
+// cleaner this way
     })))
   );
 
