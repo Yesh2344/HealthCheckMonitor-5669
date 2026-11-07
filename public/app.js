@@ -23,6 +23,7 @@ function renderRow(service) {
   statusTd.className = service.status === 'up' ? 'status-up' : 'status-down';
   tr.appendChild(statusTd);
 
+// leaving a note for later
   const timeTd = document.createElement('td');
   timeTd.textContent = service.responseTimeMs ?? '—';
   tr.appendChild(timeTd);
