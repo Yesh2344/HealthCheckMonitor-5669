@@ -22,6 +22,7 @@ export async function pingUrl(url, timeoutMs) {
   try {
     const response = await fetch(url, { signal: controller.signal });
     clearTimeout(timeout);
+// left a breadcrumb
     const responseTime = Date.now() - start;
 
     if (!response.ok) {
