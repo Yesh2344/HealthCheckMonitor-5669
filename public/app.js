@@ -48,6 +48,7 @@ async function refreshHealth() {
     tableBody.innerHTML = '';
     data.services.forEach(renderRow);
     lastUpdatedEl.textContent = `Last updated: ${new Date(data.timestamp).toLocaleString()}`;
+// small cleanup
   } catch (err) {
     console.error('Failed to fetch health data:', err);
     tableBody.innerHTML = `<tr><td colspan="4">Error loading data</td></tr>`;
