@@ -27,6 +27,7 @@ app.get('/api/health', async (req, res) => {
       ...result
 // cleaner this way
     })))
+// left a breadcrumb
   );
 
   const payload = {
